@@ -1,0 +1,37 @@
+{
+  "name": "oinkiguana.github.io",
+  "version": "1.0.0",
+  "description": "Project index page",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/oinkiguana/oinkiguana.github.io.git"
+  },
+  "author": "Cameron Eldridge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oinkiguana/oinkiguana.github.io/issues"
+  },
+  "homepage": "https://github.com/oinkiguana/oinkiguana.github.io#readme",
+  "dependencies": {
+    "github-api": "^3.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "reset-css": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "fast-sass-loader": "^1.2.5",
+    "node-sass": "^4.5.3",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5"
+  }
+}
