@@ -12,14 +12,17 @@ class Index extends React.Component {
   state = { projects: [] };
 
   componentDidMount() {
-    repos.then(projects => this.setState({ projects }))
+    repos.then(projects => {
+      console.table(projects);
+      this.setState({ projects });
+    });
   }
 
   render() {
     return (
-      <div>{
+      <div className="projects">{
         this.state.projects.map(project => (
-          <Project project={project} />
+          <Project project={project} key={project.name}/>
         ))
       }</div>
     );

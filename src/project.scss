@@ -1,0 +1,25 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  min-height: 3pc;
+  padding: 1pc;
+  margin: 1pc;
+
+  &__url {
+    font-family: "Lobster Two";
+    font-size: 2em;
+    margin: 0.5pc 0;
+
+    a {
+      text-decoration: none;
+
+      &:link, &:visited {
+        color: rgb(55, 151, 176);
+      }
+
+      &:hover, &:active {
+        color: rgb(78, 189, 204);
+      }
+    }
+  }
+}
