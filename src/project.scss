@@ -2,24 +2,44 @@
   display: flex;
   flex-direction: column;
   min-height: 3pc;
-  padding: 1pc;
+  padding: 1pc 1pc 0 1pc;
   margin: 1pc;
+  border: 1px dotted #ddd;
+
+  &__repo {
+    font-family: "Lobster Two";
+    font-size: 2rem;
+    margin: 0 0 0.5pc 0;
+  }
+
+  &__fork {
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
 
   &__url {
-    font-family: "Lobster Two";
-    font-size: 2em;
-    margin: 0.5pc 0;
+    text-decoration: none;
 
-    a {
-      text-decoration: none;
-
-      &:link, &:visited {
-        color: rgb(55, 151, 176);
-      }
-
-      &:hover, &:active {
-        color: rgb(78, 189, 204);
-      }
+    &:link, &:visited {
+      color: rgb(55, 151, 176);
     }
+
+    &:hover, &:active {
+      color: rgb(78, 189, 204);
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.5pc;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 2pc;
+    margin: 0 1pc;
   }
 }

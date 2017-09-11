@@ -8,6 +8,12 @@ import { render } from 'react-dom';
 import { Project } from './project';
 import { repos } from './api';
 
+function alphabetical(left, right) {
+  return left.name < right.name
+    ? -1
+    : 1;
+}
+
 class Index extends React.Component {
   state = { projects: [] };
 
@@ -21,7 +27,7 @@ class Index extends React.Component {
   render() {
     return (
       <div className="projects">{
-        this.state.projects.map(project => (
+        this.state.projects.sort(alphabetical).map(project => (
           <Project project={project} key={project.name}/>
         ))
       }</div>
