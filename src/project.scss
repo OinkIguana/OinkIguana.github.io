@@ -5,11 +5,15 @@
   padding: 1pc 1pc 0 1pc;
   margin: 1pc;
   border: 1px dotted #ddd;
+  overflow: hidden;
 
   &__repo {
     font-family: 'Comfortaa';
     font-size: 2rem;
     margin: 0 0 0.5pc 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__desc {
