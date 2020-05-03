@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import EmojiConverter from 'emoji-js';
-const MY_LOGIN = 'OinkIguana';
+const MY_LOGIN = 'foxfriends';
 
 const emoji = new EmojiConverter();
 emoji.replace_mode = 'unified';
@@ -16,7 +16,7 @@ export function Project(props) {
       <div className="project__desc">{ emoji.replace_colons(description || "") }</div>
       <div className="project__links">
         <div className="project__link"><a className="project__url" href={ html_url }>📕 Repository</a></div>
-        { has_pages && name !== "oinkiguana.github.io"
+        { has_pages && name !== "foxfriends.github.io"
           ? <div className="project__link"><a className="project__url" href={ name }>📃 Pages</a></div>
           : null }
         { homepage
