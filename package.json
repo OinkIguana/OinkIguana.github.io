@@ -19,7 +19,7 @@
   "homepage": "https://github.com/oinkiguana/oinkiguana.github.io#readme",
   "dependencies": {
     "emoji-js": "^3.5.0",
-    "github-api": "^3.3.0",
+    "github-api": "^3.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
